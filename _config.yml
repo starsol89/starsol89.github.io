@@ -1,90 +1,67 @@
-# Site
-title: Starsol89
-bio: "하루 하루 꾸준한 개발자."
-description: "Moon is a minimal, one column jekyll theme for your blog."
-reading_time: true
-words_per_minute: 200
-logo: "assets/img/logo.png"
-background: "assets/img/placeholder-big.jpg"
-tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
-locale: en_US
-url: https://starsol89.github.io/
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://starsol89.github.io"
 
-# Jekyll
-permalink: /:title/
+# THEME-SPECIFIC CONFIGURATION
+title: Type on Strap # site's title
+description: "A website with blog posts and pages" # used by search engines
+avatar: assets/img/triangle.png # Empty for no avatar in navbar
+favicon: assets/favicon.ico # Icon displayed in the tab
+
+# Header and footer text
+header_text: # Change Blog header text
+header_feature_image: assets/img/pexels/triangular.jpeg
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+
+# Blog
+excerpt: true # Or "truncate" (first 250 characters), "false" to disable
+post_navigation: true
+color_image: /assets/img/lineart.png # A bit transparent for color posts.
+
+# Features
+katex: true # Enable if using math markup
+google_analytics: # Tracking ID, e.g. "UA-000000-01"
+disqus_shortname: # Your discus shortname for comments
+layout_variables: # Open the "_sass > base" folder, and open "_variables.scss"
+footer_icons: # In _data/social.yml
+share_buttons: # In _data/social.yml
+authors: # In _data/authors.yml
+language: # In _data/language.yml
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# PORTFOLIO
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+
+# BUILD SETTINGS
 markdown: kramdown
 highlighter: rouge
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-mathjax: true
 sass:
   sass_dir: _sass
-  style: compressed
-
-# Comments
-disqus_shortname: taylantatli
-
-# Social
-# if you don't have any of social below, comment the line.
-#google:
-#plus:            #username
-#analytics:
-#verify:
-#ad-client:
-#ad-slot:
-#bing-verify:
-#email:
-twitter: username
-facebook: https://facebook.com/youngchoel89
-github-url: https://github.com/starsol89
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-instagram: username
-#lastfm:            username
-#tumblr:            username
-#medium:            '@username'
-#pinterest:         username
-#foursquare:        username
-steam: username
-#dribbble:          username
-#youtube:           username
-#youtube-channel:   channel
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
-
-# Gems
-gems:
-  - jekyll-mentions
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
-
-jekyll-mentions:
-  base_url: https://github.com
-
-# Exclude list
+  style: :compressed
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
 exclude:
   [
-    README.md,
-    Gemfile,
-    Gemfile.lock,
-    node_modules,
-    gulpfile.js,
-    package.json,
-    _site,
-    src,
-    vendor,
-    CNAME,
-    LICENSE,
-    Rakefile,
+    ".jekyll-cache",
+    "Gemfile",
+    "Gemfile.lock",
+    "type-on-strap.gemspec",
+    "*.gem",
+    ".idea",
+    "vendor/*",
+    "LICENSE",
+    "README.md",
+    "screenshot.png",
+    "assets/package.json",
+    "assets/node_modules",
+    "assets/gulpfile.js",
   ]
+
+# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
+remote_theme: sylhare/Type-on-Strap # If using as a remote_theme in github
