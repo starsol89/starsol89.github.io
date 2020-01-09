@@ -1,0 +1,21 @@
+I"�<h3 id="nodejs란-무엇인가">Node.js란 무엇인가?</h3>
+
+<p>브라우저에 종속 되어 있고 브라우저에 맞춰진 언어였던, Javascript를 브라우저 밖으로 가지고 나와서 유저가 사용 할 수 있게 한 것이다.</p>
+
+<p>이것을 통해서 우리는 file system을 다룰수 있다.</p>
+
+<p>서버를 만들수있고, Web scrapper를 만들어서 웹페이지에 접속해서 정보들을 수집 할 수 있다.</p>
+
+<p>위에 일이 가능한 이유는 Javascript가 프로그래밍 언어 이기 때문이다.</p>
+
+<p>Node.js를 쓰는 이유는 무엇일까?</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 프론트와 백엔드 모두를 Javascript로 만들때
+2. 특정 라이브러리 없이 처음 부터 하나 하나 쌓아가는 식으로 작업을 수행한다. (호불호가 갈리지만 정확히 내가 무엇을 하고 있는지 인식 할 수 있다.)
+3. 내가 많은 데이터를 움직여야 할 때 사용하기 정말 좋다. 즉, 많은 데이터를 다뤄야 할때 ex) database 생성, database 삭제, 사용자에게 전송하고, 어떤 곳에 저장하고 등등 node.js는 데이터를 다루는 성능이 아주 좋다.
+</code></pre></div></div>
+
+<ul>
+  <li>macOS에서 사용하는 홈브루(Homebrew)는 자유 오픈소스 소프트웨어 패키지 관리 시스템의 하나이며, macOS 운영체제의 소프트웨어 설치를 단순하게 만들어 준다.</li>
+</ul>
+:ET
