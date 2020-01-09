@@ -9,7 +9,7 @@ avatar: assets/img/triangle.jpeg # Empty for no avatar in navbar
 favicon: assets/favicon.ico # Icon displayed in the tab
 
 # Header and footer text
-header_text: 매일 작업하는 꾸준한 개발자 # Change Blog header text
+header_text: Failure is but a stepping stone to success # Change Blog header text
 header_feature_image: assets/img/pexels/triangular.jpeg
 footer_text: >
   이 블로그는 <a href="https://jekyllrb.com/">Jekyll</a> 와 <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> 를 이용해서 만들었습니다.
