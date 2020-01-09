@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Generate a table of content
-tags: [toc.js, kramdown, Markdown, Customization]
 author: sylhare
 excerpt_separator: <!--more-->
 ---
@@ -11,17 +10,16 @@ Test article, get the source on [github](https://github.com/Sylhare/Type-on-Stra
 # Using Kramdown GFM <!--more-->
 
 <!-- To be placed at the beginning of the post, it is where the table of content will be generated -->
-* TOC
-{:toc}
+
+- TOC
+  {:toc}
 
 ## Basic Usage
-
 
 You need to put this at the beginning of the page where you want the table of content to be displayed
 
 ```html
-* TOC
-{:toc}
+* TOC {:toc}
 ```
 
 It will then render the markdown and html titles (lines that begins with `#` or using the `<h1></h1>` tages)
@@ -44,6 +42,7 @@ If you want to customize the theme it is up to you, you can add the `toc.js` fil
 ```html
 <script src="{{ "/assets/js/toc.js" | relative_url }}" ></script>
 ```
+
 Then you can use it as it is said on the repository.
 
 ## Basic Usage
@@ -70,9 +69,9 @@ Then at the end of your post, you call the .toc() function using:
 
 ```html
 <script type="text/javascript">
-$(document).ready(function() {
-    $('#toc').toc();
-});
+  $(document).ready(function() {
+    $("#toc").toc();
+  });
 </script>
 ```
 

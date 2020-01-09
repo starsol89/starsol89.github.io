@@ -1,32 +1,39 @@
 ---
 layout: default
 ---
+
 {% include share_thumbnail.html page=page %}
 
-<article {% if page.feature-img or page.color %}class="feature-image"{% endif %}>
+<article
+  {%
+  if
+  page.feature-img
+  or
+  page.color
+  %}class="feature-image"
+  {%
+  endif
+  %}
+>
   <header id="main" style="">
     {% unless page.hide_title %}
-      <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
-      {% include post_info.html author=page.author date=page.date %}
-    {% endunless %}
+    <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
+    {% include post_info.html author=page.author date=page.date %} {% endunless
+    %}
   </header>
   <section class="post-content">
-  {% if page.bootstrap %}
-    <div class="bootstrap-iso">
-    {% endif %}
-      {{ content }}
     {% if page.bootstrap %}
+    <div class="bootstrap-iso">
+      {% endif %} {{ content }} {% if page.bootstrap %}
     </div>
-  {% endif %}
+    {% endif %}
   </section>
+  <!-- 소셜 태그 {% include share_buttons.html %} -->
 
-  <!-- Social media shares -->
-  {% include share_buttons.html %}
-
-   <!-- Tag list -->
+  <!-- 태그 리스트 
   {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
   {% include tags_list.html tags=tag_list %}
-
+  -->
 </article>
 
 <!-- Disqus -->
@@ -37,11 +44,10 @@ layout: default
 {% endif %}
 
 <!-- Post navigation -->
-{% if site.post_navigation  or site.theme_settings.post_navigation %}
-  {% include post_nav.html %}
-{% endif %}
+{% if site.post_navigation or site.theme_settings.post_navigation %} {% include
+post_nav.html %} {% endif %}
 
-<!-- To change color of links in the page -->
+<!-- To change color of links in the page -소셜 및 태그 스타일 시트
 <style>
   {% if page.color %}
     .feature-image a { color: {{ page.color }} !important; }

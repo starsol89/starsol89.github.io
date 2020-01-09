@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Markdown and HTML
-tags: [Test, Markdown]
 author: rohanchandra
 ---
 
@@ -9,10 +8,10 @@ Jekyll supports the use of [Markdown](http://daringfireball.net/projects/markdow
 
 Tables have also been extended from Markdown:
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+| First Header | Second Header |
+| ------------ | ------------- |
+| Content Cell | Content Cell  |
+| Content Cell | Content Cell  |
 
 Here's an example of an image, which is included using Markdown:
 
@@ -23,14 +22,14 @@ Highlighting for code in Jekyll is done using Base16 or Rouge. This theme makes 
 {% highlight js %}
 // count to ten
 for (var i = 1; i <= 10; i++) {
-    console.log(i);
+console.log(i);
 }
 
 // count to twenty
 var j = 0;
 while (j < 20) {
-    j++;
-    console.log(j);
+j++;
+console.log(j);
 }
 {% endhighlight %}
 
