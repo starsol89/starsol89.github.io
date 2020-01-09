@@ -15,7 +15,7 @@ layout: default
   endif
   %}
 >
-  <header id="main" style="">
+  <header id="main">
     {% unless page.hide_title %}
     <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
     {% include post_info.html author=page.author date=page.date %} {% endunless
