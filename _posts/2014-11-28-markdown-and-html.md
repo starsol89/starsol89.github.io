@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Markdown and HTML
+tags: [Test, Markdown]
 author: rohanchandra
 ---
 
