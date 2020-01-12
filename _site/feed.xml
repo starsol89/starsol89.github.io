@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-12T09:03:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Starsol_YC</title><subtitle>jekyll과 github pages를 이용해서 만든 블로그</subtitle><entry><title type="html">ExpressJS에 대해서</title><link href="http://localhost:4000/2020/01/12/ExpressJS.html" rel="alternate" type="text/html" title="ExpressJS에 대해서" /><published>2020-01-12T00:00:00+09:00</published><updated>2020-01-12T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/12/ExpressJS</id><content type="html" xml:base="http://localhost:4000/2020/01/12/ExpressJS.html">&lt;h3 id=&quot;expressjs-서버&quot;&gt;ExpressJS 서버&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-12T09:10:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Starsol_YC</title><subtitle>jekyll과 github pages를 이용해서 만든 블로그</subtitle><entry><title type="html">ExpressJS에 대해서</title><link href="http://localhost:4000/2020/01/12/ExpressJS.html" rel="alternate" type="text/html" title="ExpressJS에 대해서" /><published>2020-01-12T00:00:00+09:00</published><updated>2020-01-12T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/12/ExpressJS</id><content type="html" xml:base="http://localhost:4000/2020/01/12/ExpressJS.html">&lt;h3 id=&quot;expressjs-서버&quot;&gt;ExpressJS 서버&lt;/h3&gt;
 
 &lt;h4 id=&quot;what-is-a-server&quot;&gt;What is a Server?&lt;/h4&gt;
 
@@ -301,7 +301,102 @@ git 저장소에 저장 될때 무시목록을 작성해서 관리 할 수 있�
 
 &lt;p&gt;즉, 모두 함수들이고 이곳에서 HTML, CSS 들을 리턴해 줄 수 있다.&lt;/p&gt;
 
-&lt;p&gt;이곳이 우리가 분류한 MVC 패턴에서 C에 해당하는 Control 부분이다.&lt;/p&gt;</content><author><name></name></author><category term="Express.js" /><summary type="html">ExpressJS 서버</summary></entry><entry><title type="html">Node.js란 무엇인가?</title><link href="http://localhost:4000/2020/01/09/Nodejs.html" rel="alternate" type="text/html" title="Node.js란 무엇인가?" /><published>2020-01-09T00:00:00+09:00</published><updated>2020-01-09T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/09/Nodejs</id><content type="html" xml:base="http://localhost:4000/2020/01/09/Nodejs.html">&lt;h3 id=&quot;nodejs란-무엇인가&quot;&gt;Node.js란 무엇인가?&lt;/h3&gt;
+&lt;p&gt;이곳이 우리가 분류한 MVC 패턴에서 C에 해당하는 Control 부분이다.&lt;/p&gt;</content><author><name></name></author><category term="Express.js" /><summary type="html">ExpressJS 서버</summary></entry><entry><title type="html">익스프레스 템플릿(pug)</title><link href="http://localhost:4000/2020/01/12/Nodejs-Pug.html" rel="alternate" type="text/html" title="익스프레스 템플릿(pug)" /><published>2020-01-12T00:00:00+09:00</published><updated>2020-01-12T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/12/Nodejs-Pug</id><content type="html" xml:base="http://localhost:4000/2020/01/12/Nodejs-Pug.html">&lt;h4 id=&quot;pug-대하여&quot;&gt;Pug 대하여&lt;/h4&gt;
+
+&lt;p&gt;pug는 view engine이며, template언어 이고, html 파일들을 더 보기 편하고 쉽게 이해하게 만들어준다.&lt;/p&gt;
+
+&lt;p&gt;pug, express에는 view 파일들의 위치에 관한 기본 설정이 존재 한다.&lt;/p&gt;
+
+&lt;p&gt;만약 그 설정을 바꾸고 싶다면 expressjs의 공식문서에 나온 것 처럼 view 설정들을 바꾸면 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/pugseting.png&quot; alt=&quot;pugseting&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;그렇다면 이 template을 웹사이트에서 보여주려면 어떤 방식으로 작업 해야할까?&lt;/p&gt;
+
+&lt;p&gt;Controllers 폴더에 있는 컨트롤러 파일들 중에 res.send를 res.render를 사용해서 해결 할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/render.png&quot; alt=&quot;render&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;그럼 이러한 함수가 view 폴더에서 파일명이 home이고, 확장자가 pug인 템플렛 파일을 찾은 후에 보여준다.&lt;/p&gt;
+
+&lt;p&gt;확장자 pug는 이전에 우리가 view engine에서 설정 해줬다.&lt;/p&gt;
+
+&lt;p&gt;pug가 html에 보다 좋고 편리한 이유는 반복되는 작업은 따로 만들어 놓고 전체의 html을 유지보수 할 수 있다는 것이다.&lt;/p&gt;
+
+&lt;p&gt;지금 하는 코드에서 우리는 main.pug를 중심으로 하고, 거기에 header.pug 그리고 foorter.pug 두개를 따로 만들어서 반복적으로 쓰며 수정이 필요하다면 저 세 곳만 고쳐서 전체 html 페이지를 바꿔 줄 수 있다.&lt;/p&gt;
+
+&lt;p&gt;즉, 우리가 home 화면에 접근하게 된다면 기본적인 틀(전반적으로 화면 이동이 이뤄져도 반복적으로 보이는 것들)을 보이게 된다. 그럼 main.pug가 실행되고 그 안에 html 기본 틀 및 header.pug, foorter.pug가 있고, block content를 통해서 다른 pug의 내용이 적용 된다.&lt;/p&gt;
+
+&lt;p&gt;예를들어 첫 홈 화면에서 회원가입으로 이동 했다면 main.pug에 작성된&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;main
+	block content
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;덕분에 join.pug의 화면이 보이게 된다.&lt;/p&gt;
+
+&lt;p&gt;그럼 join.pug 화면에서는 우리가 꼭 반복적으로 설정해줬던 main.pug, header.pug, foorter.pug 파일들이 보이게 되고(여기에 작성한 코드들이 보인다는 말), join.pug에선&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;extends layouts/main
+
+block content
+     p Join
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이걸 통해 main.pug에 block content 위치에 p태그 Join이 실행 되어있다.&lt;/p&gt;
+
+&lt;p&gt;위에 언급 했듯이 우리는 header.pug, foorter.pug도 따로 만들어서 main.pug에서 쓴다고 했는데, 쓰는 방법은 사용 하고 싶은 곳에 include로 시작해서 경로를 지정하면 된다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;include ../partials/header 이러한 방식!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;또한 pug 속에서 javascript를 사용하기 위해서는 #{} 이 안에 코드를 작성하면 된다. 예를들어&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;span.footer__text #{siteName} #{new Date().getFullYear()} &amp;amp;copy;
+이러한 방식!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그리고 우리는 컨트롤러에 있는 정보를 템플렛에 추가하는 법도 있는데 하나의 템플렛에만 추가하거나, 전체 템플렛에 추가 할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;그중 먼저 전체적으로 템플렛에 추가하는 방법은 미들웨어를 이용하는 방법이 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/middlewaresjs.png&quot; alt=&quot;middlewaresjs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이런식으로 만든다.&lt;/p&gt;
+
+&lt;p&gt;여기서&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;res.locals.siteName = &quot;WeTube&quot;; 는 footer.pug에서 #{siteName} 위치에 WeTube가 들어가게 된다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이 이미지와 같이 코딩하면 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/footer.png&quot; alt=&quot;footer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;또 우리는 위에 보이는 미들웨어에서&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;res.locals.routes = routes;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이것도 코딩을 작업 했는데, 밑에 이미지 처럼 사용하게 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/header.png&quot; alt=&quot;header&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;보면 a(href=routes.join) Join 이러한 방식으로 사용 된걸 알 수 있다.&lt;/p&gt;
+
+&lt;p&gt;마지막으로 하나의 템플릿에만 변수를 추가 하려면 Controller.js에서 #{쓰고싶은이름적기}를 작성하고 템플렛에 적용 시켜주면 된다.&lt;/p&gt;
+
+&lt;p&gt;밑에 이미지와 같다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/pagetitle.png&quot; alt=&quot;pagetitle&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;res.render(“home”, { pageTitle: “Home” });&lt;/p&gt;
+
+&lt;p&gt;이곳에서 이뤄지는건데, 첫번재 “home” 인자는 템플렛이고, 두번째 인자 { pageTitle: “Home” }는 템플렛에 추가할 정보가 담긴 것이다.&lt;/p&gt;
+
+&lt;p&gt;고로 템플렛에 작성해서 사용하는 법은 밑에 이미지 처럼 사용하면 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/pagetitle2.png&quot; alt=&quot;pagetitle2&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="pug" /><category term="node.js" /><summary type="html">Pug 대하여</summary></entry><entry><title type="html">Node.js란 무엇인가?</title><link href="http://localhost:4000/2020/01/09/Nodejs.html" rel="alternate" type="text/html" title="Node.js란 무엇인가?" /><published>2020-01-09T00:00:00+09:00</published><updated>2020-01-09T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/09/Nodejs</id><content type="html" xml:base="http://localhost:4000/2020/01/09/Nodejs.html">&lt;h3 id=&quot;nodejs란-무엇인가&quot;&gt;Node.js란 무엇인가?&lt;/h3&gt;
 
 &lt;p&gt;브라우저에 종속 되어 있고 브라우저에 맞춰진 언어였던, Javascript를 브라우저 밖으로 가지고 나와서 유저가 사용 할 수 있게 한 것이다.&lt;/p&gt;
 
@@ -704,11 +799,4 @@ Some more text
 $(document).ready(function() {
     $('#toc').toc();
 });
-&lt;/script&gt;</content><author><name>starsol89</name></author><summary type="html">Test article, get the source on github. Using Kramdown GFM</summary></entry><entry><title type="html">Blogging with title</title><link href="http://localhost:4000/2013/11/18/blogging-with-title.html" rel="alternate" type="text/html" title="Blogging with title" /><published>2013-11-18T00:00:00+09:00</published><updated>2013-11-18T00:00:00+09:00</updated><id>http://localhost:4000/2013/11/18/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/2013/11/18/blogging-with-title.html">&lt;h1 id=&quot;i-am-a-big-title&quot;&gt;I am a BIG title&lt;/h1&gt;
-
-&lt;p&gt;This is a very tiny tiny post with less than 250 letters.&lt;/p&gt;
-
-&lt;p&gt;Search should be working even for complicated escape symbols&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sed -i 's/\&quot;hostname\&quot;\:.*$/\&quot;hostname\&quot;\: \&quot;'$IPADDR'\&quot;\,/g' open-falcon/agent/config/cfg.json
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">I am a BIG title</summary></entry></feed>
+&lt;/script&gt;</content><author><name>starsol89</name></author><summary type="html">Test article, get the source on github. Using Kramdown GFM</summary></entry></feed>
