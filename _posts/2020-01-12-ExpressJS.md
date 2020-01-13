@@ -288,10 +288,22 @@ userRouter and videoRouter 두가지도 각각의 관련 된 URL 주소들을 �
 
 그 방법으로는
 
-![search1](img/search1.png)
+![search1](/assets/img/pexels/search1.png)
 
-![search3](img/search3.png)
+![search3](/assets/img/pexels/search3.png)
 
-![search2](img/search2.png)
+![search2](/assets/img/pexels/search2.png)
 
 이러한 방법이 있다.
+
+#### Join : Log in HTML
+
+이번에는 소셜 가입 및 로그인을 만들어 보려고 한다. 우선 button이 필요한데 이 button은 여러 페이지에 적용 시키고 보수가 필요하면 그 페이지만 수정하면 될 수 있게 socialLogin.pug에 만들어 둔다.
+
+![social1](/assets/img/pexels/social1.png)
+
+![social2](/assets/img/pexels/social2.png)
+
+![social3](/assets/img/pexels/social3.png)
+
+이렇게 된다.
