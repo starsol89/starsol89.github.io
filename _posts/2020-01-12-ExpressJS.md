@@ -281,3 +281,17 @@ userRouter and videoRouter 두가지도 각각의 관련 된 URL 주소들을 �
 즉, 모두 함수들이고 이곳에서 HTML, CSS 들을 리턴해 줄 수 있다.
 
 이곳이 우리가 분류한 MVC 패턴에서 C에 해당하는 Control 부분이다.
+
+#### Search Controller(검색한 단어나 명칭이 홈페이지 화면 안에서 보여지게 만드는 법)
+
+우리는 검색 기능을 통해서 주소창과 홈페이지에 내가 사용한 명칭이나 단어들을 확인 할 수 있다.
+
+그 방법으로는
+
+![search1](img/search1.png)
+
+![search3](img/search3.png)
+
+![search2](img/search2.png)
+
+이러한 방법이 있다.
