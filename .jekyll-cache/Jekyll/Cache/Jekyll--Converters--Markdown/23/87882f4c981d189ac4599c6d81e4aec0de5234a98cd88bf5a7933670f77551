@@ -1,4 +1,4 @@
-I"`><h3 id="expressjs-서버">ExpressJS 서버</h3>
+I"�P<h3 id="expressjs-서버">ExpressJS 서버</h3>
 
 <h4 id="what-is-a-server">What is a Server?</h4>
 
@@ -302,4 +302,109 @@ git 저장소에 저장 될때 무시목록을 작성해서 관리 할 수 있�
 <p>즉, 모두 함수들이고 이곳에서 HTML, CSS 들을 리턴해 줄 수 있다.</p>
 
 <p>이곳이 우리가 분류한 MVC 패턴에서 C에 해당하는 Control 부분이다.</p>
+
+<h4 id="search-controller검색한-단어나-명칭이-홈페이지-화면-안에서-보여지게-만드는-법">Search Controller(검색한 단어나 명칭이 홈페이지 화면 안에서 보여지게 만드는 법)</h4>
+
+<p>우리는 검색 기능을 통해서 주소창과 홈페이지에 내가 사용한 명칭이나 단어들을 확인 할 수 있다.</p>
+
+<p>그 방법으로는</p>
+
+<p><img src="/assets/img/pexels/search1.png" alt="search1" /></p>
+
+<p><img src="/assets/img/pexels/search3.png" alt="search3" /></p>
+
+<p><img src="/assets/img/pexels/search2.png" alt="search2" /></p>
+
+<p>이러한 방법이 있다.</p>
+
+<h4 id="join--log-in-html">Join : Log in HTML</h4>
+
+<p>이번에는 소셜 가입 및 로그인을 만들어 보려고 한다. 우선 button이 필요한데 이 button은 여러 페이지에 적용 시키고 보수가 필요하면 그 페이지만 수정하면 될 수 있게 socialLogin.pug에 만들어 둔다.</p>
+
+<p><img src="/assets/img/pexels/social1.png" alt="social1" /></p>
+
+<p><img src="/assets/img/pexels/social2.png" alt="social2" /></p>
+
+<p><img src="/assets/img/pexels/social3.png" alt="social3" /></p>
+
+<p>이렇게 된다.</p>
+
+<h4 id="데이터베이스를-이용해서-템플릿에-사용하는-법">데이터베이스를 이용해서 템플릿에 사용하는 법</h4>
+
+<p>우선 아직은 가짜 데이터베이스를 이용해서 만들었다. 하지만 실제 데이터를 이용하는 법도 같다.</p>
+
+<p><img src="/assets/img/pexels/deta1.png" alt="deta1" /></p>
+
+<p><img src="/assets/img/pexels/deta2.png" alt="deta2" /></p>
+
+<p>이렇게 사용이 가능하다.</p>
+
+<h4 id="mixin을-이용해서-다른정보-같은구조를-지닌-html-만드는법">mixin을 이용해서 다른정보, 같은구조를 지닌 html 만드는법</h4>
+
+<p>mixin는 웹사이트에서 자주 반복되는 html 코드를 담고 있다.</p>
+
+<p><img src="/assets/img/pexels/mixin1.png" alt="mixin1" /></p>
+
+<p><img src="/assets/img/pexels/mixin2.png" alt="mixin2" /></p>
+
+<p>기억하자.</p>
+
+<h4 id="동영상-검색-join-이후-로그인-후-home-이동하는-법">동영상 검색, join 이후 로그인 후 home 이동하는 법</h4>
+
+<p>우선 우리가 검색을 통해 영상을 검색하면 해당 영상만 들어내게 하는 법은</p>
+
+<p>videoController.js 에 res.render(“search”, { pageTitle: “Search”, searchingBy, videos });</p>
+
+<p>이 코드 끝에 videos를 추가 해줌으로 써 mixin을 이용해서 Search.pug에서도 사용을 하는걸 알 수 있다.</p>
+
+<p>즉, 검색을 했을때 해당 데이터베이스로 가서 검색한 명칭과 같은게 있다면 찾아내서 페이지에 보이게 해주는 것이다.</p>
+
+<p><img src="/assets/img/pexels/search4.png" alt="search4" /></p>
+
+<p>또 우리는 회원가입 시 정보를 입력하는데 join을 누르면 /join 경로로 post 하기 위한 설정이나 코드가 없기에 join되지 않는데, 이것을 해결 하기 위해서</p>
+
+<ol>
+  <li>Route.js에 postjoin 이동경로를 만들어 준다.</li>
+  <li>Controller.js에 postjoin 함수를 만들어 준다.</li>
+</ol>
+
+<p>즉, 우리는 globalRouter.js에 postjoin 경로를 만들고 그걸 통해 Controller.js로 이동해서 postjoin 함수가 동작하게 된다.</p>
+
+<p>라우터에 코드는 globalRouter.post(routes.join, postJoin) 이 될 것이고,</p>
+
+<p>컨트롤에서는</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export const postJoin = (req, res) =&gt; {
+    const {
+        body: { name, email, password, password2 }
+    } = req;
+    if(password !== password2) {
+      res.status(400);
+      res.render("join", { pageTitle: "Join" });
+    } else {
+    res.redirect(routes.home);
+
+   }
+ };
+</code></pre></div></div>
+
+<p>이런 코드가 작성 될 것이다.</p>
+
+<p>풀어보면 body에 이런 요청을 통해서 form 형태로 받아지고 그 받은 정보 중 패스워드 두개를 비교해서 틀리면 400 상태코드 발동 해서 잘못 된 요청을 표기해준다.</p>
+
+<p>틀리리 않았으면 home 페이지를 로그인 후에 가준다.</p>
+
+<p>여기서 app.js에 bodyParser 미들웨어가 존재 하지 않는다면, 내가 입력한 정보가 form 형태로 받아지지 않게 된다.</p>
+
+<p>그러니 꼭 기억해 두자.</p>
+
+<h4 id="로그인-이후-유저-모드로-페이지-보이게-하기">로그인 이후 유저 모드로 페이지 보이게 하기</h4>
+
+<p><img src="/assets/img/pexels/login1.png" alt="login1" /></p>
+
+<p><img src="/assets/img/pexels/login2.png" alt="login2" /></p>
+
+<p><img src="/assets/img/pexels/login3.png" alt="login3" /></p>
+
+<p>다만 우리는 여기서 위에 join 처럼 get, post를 나눈다는걸 기억 해야한다.</p>
 :ET
