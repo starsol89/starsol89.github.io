@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
     <!-- Canonical -->
-    <link rel="canonical" href="http://localhost:4000/2020/01/12/ExpressJS.html">
+    <link rel="canonical" href="http://localhost:4000/2020/01/17/wetube.html">
 
     <!-- RSS -->
     <link rel="alternate" type="application/atom+xml" title="Starsol_YC" href="http://localhost:4000/feed.xml"/>
@@ -38,25 +38,25 @@
 
     <!-- seo tags -->
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>ExpressJS에 대해서 | Starsol_YC</title>
+<title>Wetube 클론 코딩을 하면서 배운 것 정리. | Starsol_YC</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="ExpressJS에 대해서" />
+<meta property="og:title" content="Wetube 클론 코딩을 하면서 배운 것 정리." />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ExpressJS 서버" />
-<meta property="og:description" content="ExpressJS 서버" />
-<link rel="canonical" href="http://localhost:4000/2020/01/12/ExpressJS.html" />
-<meta property="og:url" content="http://localhost:4000/2020/01/12/ExpressJS.html" />
+<meta name="description" content="Node.js란 무엇인가?" />
+<meta property="og:description" content="Node.js란 무엇인가?" />
+<link rel="canonical" href="http://localhost:4000/2020/01/17/wetube.html" />
+<meta property="og:url" content="http://localhost:4000/2020/01/17/wetube.html" />
 <meta property="og:site_name" content="Starsol_YC" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-12T00:00:00+09:00" />
+<meta property="article:published_time" content="2020-01-17T00:00:00+09:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2020/01/12/ExpressJS.html","headline":"ExpressJS에 대해서","dateModified":"2020-01-12T00:00:00+09:00","datePublished":"2020-01-12T00:00:00+09:00","description":"ExpressJS 서버","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/01/12/ExpressJS.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/2020/01/17/wetube.html","headline":"Wetube 클론 코딩을 하면서 배운 것 정리.","dateModified":"2020-01-17T00:00:00+09:00","datePublished":"2020-01-17T00:00:00+09:00","description":"Node.js란 무엇인가?","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/01/17/wetube.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- Manual seo tags -->
     <!--
-    <title>ExpressJS에 대해서 | Starsol_YC</title>
-    <meta name="description" content="ExpressJS 서버">
+    <title>Wetube 클론 코딩을 하면서 배운 것 정리. | Starsol_YC</title>
+    <meta name="description" content="Node.js란 무엇인가?">
     -->
 </head>
 
@@ -154,10 +154,10 @@
     <div class="content">
       
 
-<meta property="og:url"          content="/2020/01/12/ExpressJS.html" />
+<meta property="og:url"          content="/2020/01/17/wetube.html" />
 <meta property="og:type"         content="article" />
-<meta property="og:title"        content="ExpressJS에 대해서" />
-<meta property="og:description"  content="ExpressJS 서버
+<meta property="og:title"        content="Wetube 클론 코딩을 하면서 배운 것 정리." />
+<meta property="og:description"  content="Node.js란 무엇인가?
 " />
 <meta property="og:image"        content="assets/img/pexels/man.jpg" />
 
@@ -167,18 +167,41 @@
 >
   <header id="main">
     
-    <h1 id="ExpressJS%EC%97%90+%EB%8C%80%ED%95%B4%EC%84%9C" class="title">ExpressJS에 대해서</h1>
+    <h1 id="Wetube+%ED%81%B4%EB%A1%A0+%EC%BD%94%EB%94%A9%EC%9D%84+%ED%95%98%EB%A9%B4%EC%84%9C+%EB%B0%B0%EC%9A%B4+%EA%B2%83+%EC%A0%95%EB%A6%AC." class="title">Wetube 클론 코딩을 하면서 배운 것 정리.</h1>
     
 
 
 <div class="post-info">
     <p class="meta">
-      January 12, 2020
+      January 17, 2020
     </p></div>
  
   </header>
   <section class="post-content">
-     <h3 id="expressjs-서버">ExpressJS 서버</h3>
+     <h3 id="nodejs란-무엇인가">Node.js란 무엇인가?</h3>
+
+<p>브라우저에 종속 되어 있고 브라우저에 맞춰진 언어였던, Javascript를 브라우저 밖으로 가지고 나와서 유저가 사용 할 수 있게 한 것이다.</p>
+
+<p>이것을 통해서 우리는 file system을 다룰수 있다.</p>
+
+<p>서버를 만들수있고, Web scrapper를 만들어서 웹페이지에 접속해서 정보들을 수집 할 수 있다.</p>
+
+<p>위에 일이 가능한 이유는 Javascript가 프로그래밍 언어 이기 때문이다.</p>
+
+<p>Node.js를 쓰는 이유는 무엇일까?</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 프론트와 백엔드 모두를 Javascript로 만들때
+2. 특정 라이브러리 없이 처음 부터 하나 하나 쌓아가는 식으로 작업을 수행한다. (호불호가 갈리지만 정확히 내가 무엇을 하고 있는지 인식 할 수 있다.)
+3. 내가 많은 데이터를 움직여야 할 때 사용하기 정말 좋다. 즉, 많은 데이터를 다뤄야 할때 ex) database 생성, database 삭제, 사용자에게 전송하고, 어떤 곳에 저장하고 등등 node.js는 데이터를 다루는 성능이 아주 좋다.
+</code></pre></div></div>
+
+<p>다만, django나 라라벨 같은 것은 하드웨어 즉 메모리에 접근하기에 유용하기 때문에 이때는 django 또는 라라벨을 써주는 것이 좋다.</p>
+
+<ul>
+  <li>macOS에서 사용하는 홈브루(Homebrew)는 자유 오픈소스 소프트웨어 패키지 관리 시스템의 하나이며, macOS 운영체제의 소프트웨어 설치를 단순하게 만들어 준다.</li>
+</ul>
+
+<h3 id="expressjs-서버">ExpressJS 서버</h3>
 
 <h4 id="what-is-a-server">What is a Server?</h4>
 
@@ -587,6 +610,171 @@ git 저장소에 저장 될때 무시목록을 작성해서 관리 할 수 있�
 <p><img src="/assets/img/pexels/login3.png" alt="login3" /></p>
 
 <p>다만 우리는 여기서 위에 join 처럼 get, post를 나눈다는걸 기억 해야한다.</p>
+
+<h4 id="pug-대하여">Pug 대하여</h4>
+
+<p>pug는 view engine이며, template언어 이고, html 파일들을 더 보기 편하고 쉽게 이해하게 만들어준다.</p>
+
+<p>pug, express에는 view 파일들의 위치에 관한 기본 설정이 존재 한다.</p>
+
+<p>만약 그 설정을 바꾸고 싶다면 expressjs의 공식문서에 나온 것 처럼 view 설정들을 바꾸면 된다.</p>
+
+<p><img src="/assets/img/pexels/pugseting.png" alt="pugseting" /></p>
+
+<p>그렇다면 이 template을 웹사이트에서 보여주려면 어떤 방식으로 작업 해야할까?</p>
+
+<p>Controllers 폴더에 있는 컨트롤러 파일들 중에 res.send를 res.render를 사용해서 해결 할 수 있다.</p>
+
+<p><img src="/assets/img/pexels/render.png" alt="render" /></p>
+
+<p>그럼 이러한 함수가 view 폴더에서 파일명이 home이고, 확장자가 pug인 템플렛 파일을 찾은 후에 보여준다.</p>
+
+<p>확장자 pug는 이전에 우리가 view engine에서 설정 해줬다.</p>
+
+<p>pug가 html에 보다 좋고 편리한 이유는 반복되는 작업은 따로 만들어 놓고 전체의 html을 유지보수 할 수 있다는 것이다.</p>
+
+<p>지금 하는 코드에서 우리는 main.pug를 중심으로 하고, 거기에 header.pug 그리고 foorter.pug 두개를 따로 만들어서 반복적으로 쓰며 수정이 필요하다면 저 세 곳만 고쳐서 전체 html 페이지를 바꿔 줄 수 있다.</p>
+
+<p>즉, 우리가 home 화면에 접근하게 된다면 기본적인 틀(전반적으로 화면 이동이 이뤄져도 반복적으로 보이는 것들)을 보이게 된다. 그럼 main.pug가 실행되고 그 안에 html 기본 틀 및 header.pug, foorter.pug가 있고, block content를 통해서 다른 pug의 내용이 적용 된다.</p>
+
+<p>예를들어 첫 홈 화면에서 회원가입으로 이동 했다면 main.pug에 작성된</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>main
+	block content
+</code></pre></div></div>
+
+<p>덕분에 join.pug의 화면이 보이게 된다.</p>
+
+<p>그럼 join.pug 화면에서는 우리가 꼭 반복적으로 설정해줬던 main.pug, header.pug, foorter.pug 파일들이 보이게 되고(여기에 작성한 코드들이 보인다는 말), join.pug에선</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>extends layouts/main
+
+block content
+     p Join
+</code></pre></div></div>
+
+<p>이걸 통해 main.pug에 block content 위치에 p태그 Join이 실행 되어있다.</p>
+
+<p>위에 언급 했듯이 우리는 header.pug, foorter.pug도 따로 만들어서 main.pug에서 쓴다고 했는데, 쓰는 방법은 사용 하고 싶은 곳에 include로 시작해서 경로를 지정하면 된다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>include ../partials/header 이러한 방식!
+</code></pre></div></div>
+
+<p>또한 pug 속에서 javascript를 사용하기 위해서는 #{} 이 안에 코드를 작성하면 된다. 예를들어</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>span.footer__text #{siteName} #{new Date().getFullYear()} &amp;copy;
+이러한 방식!
+</code></pre></div></div>
+
+<p>그리고 우리는 컨트롤러에 있는 정보를 템플렛에 추가하는 법도 있는데 하나의 템플렛에만 추가하거나, 전체 템플렛에 추가 할 수 있다.</p>
+
+<p>그중 먼저 전체적으로 템플렛에 추가하는 방법은 미들웨어를 이용하는 방법이 있다.</p>
+
+<p><img src="/assets/img/pexels/middlewaresjs.png" alt="middlewaresjs" /></p>
+
+<p>이런식으로 만든다.</p>
+
+<p>여기서</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>res.locals.siteName = "WeTube"; 는 footer.pug에서 #{siteName} 위치에 WeTube가 들어가게 된다.
+</code></pre></div></div>
+
+<p>이 이미지와 같이 코딩하면 된다.</p>
+
+<p><img src="/assets/img/pexels/footer.png" alt="footer" /></p>
+
+<p>또 우리는 위에 보이는 미들웨어에서</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>res.locals.routes = routes;
+</code></pre></div></div>
+
+<p>이것도 코딩을 작업 했는데, 밑에 이미지 처럼 사용하게 된다.</p>
+
+<p><img src="/assets/img/pexels/header.png" alt="header" /></p>
+
+<p>보면 a(href=routes.join) Join 이러한 방식으로 사용 된걸 알 수 있다.</p>
+
+<p>마지막으로 하나의 템플릿에만 변수를 추가 하려면 Controller.js에서 #{쓰고싶은이름적기}를 작성하고 템플렛에 적용 시켜주면 된다.</p>
+
+<p>밑에 이미지와 같다.</p>
+
+<p><img src="/assets/img/pexels/pagetitle.png" alt="pagetitle" /></p>
+
+<p>res.render(“home”, { pageTitle: “Home” });</p>
+
+<p>이곳에서 이뤄지는건데, 첫번재 “home” 인자는 템플렛이고, 두번째 인자 { pageTitle: “Home” }는 템플렛에 추가할 정보가 담긴 것이다.</p>
+
+<p>고로 템플렛에 작성해서 사용하는 법은 밑에 이미지 처럼 사용하면 된다.</p>
+
+<p><img src="/assets/img/pexels/pagetitle2.png" alt="pagetitle2" /></p>
+
+<h3 id="mongodb">MongoDB</h3>
+
+<p>우리는 이제 가짜 db.js 대신에 진짜인 데이터베이스 MongoDB를 사용할 것이다.</p>
+
+<p>MongoDB는 NoSQL로 분류되는 데이터베이스 이다.</p>
+
+<p>데이터베이스는 다양하게 존재하지만, 큰 종류로 분류하면 SQL 또는 NoSQL 두가지로 나뉜다.</p>
+
+<p>왜 우리는 MongoDB를 사용할까?</p>
+
+<p>더 적은 규칙과 더 적은 절차로 작업이 가능한 데이터베이스고, 많은 부분을 수정 할 수 있다.</p>
+
+<p>그리고 많은 Relationship이 필요없는 일반적인 프로젝트를 진행할때 좋은 선택이다.</p>
+
+<p>MongoDB 설치 관련해서 자료 찾는중… brew를 이용한 설치와 수동으로 하는법이 있는데 다 안돼고 있음….</p>
+
+<h4 id="dotenv-설치와-왜-사용-해야하는지에-대해서">dotenv 설치와 왜 사용 해야하는지에 대해서</h4>
+
+<p>실제 Application으로 만들었을 때, 보안적인 측면을 고려해서 숨겨야 할 코드 및 파일이 존재하는데 그때 사용 된다.</p>
+
+<p><img src="/assets/img/pexels/dotenv1.png" alt="dotenv1" /></p>
+
+<p><img src="/assets/img/pexels/dotenv2.png" alt="dotenv2" /></p>
+
+<p><img src="/assets/img/pexels/dotenv3.png" alt="dotenv3" /></p>
+
+<p>mongodb 설치 이후에 설치 한다는걸 잊지말자.</p>
+
+<h4 id="mongodb-video-modeldocument-name-and-schema">MongoDB Video Model(document name And Schema)</h4>
+
+<p>models폴더 안에 Video.js 코드
+<img src="/assets/img/pexels/schema1.png" alt="schema1" /></p>
+
+<p><img src="/assets/img/pexels/schema2.png" alt="schema1" /></p>
+
+<p>init.js 코드
+<img src="/assets/img/pexels/schema3.png" alt="schema1" /></p>
+
+<h4 id="ref를-통해서-video와-comment를-연결하는법">ref를 통해서 Video와 Comment를 연결하는법.</h4>
+
+<p>이번에 하는 작업은 Video를 업로드 하고 난 이후 Comment를 달 수 있게 해주는 코드 작업이다.</p>
+
+<p>둘의 관계를 지어줘야하는데 방법으로는</p>
+
+<p><img src="/assets/img/pexels/ref1.png" alt="ref1" /></p>
+
+<p><img src="/assets/img/pexels/ref2.png" alt="ref2" /></p>
+
+<p><img src="/assets/img/pexels/ref3.png" alt="ref3" /></p>
+
+<p>이러한 방법이 존재한다.</p>
+
+<p>명심해야 할 것은 하나의 ref고, Comment와 다르게 좋아요나 유저를 저장하거나 할때 다른 ref를 사용 할 것이다.</p>
+
+<h4 id="영상-업로드-절차와-multer-middleware-사용법과-쓰는-이유">영상 업로드 절차와 Multer middleware 사용법과 쓰는 이유</h4>
+
+<p>upload 할때 우리가 원하는건 file이 아니라 loation(위치) 이다.</p>
+
+<p>어떠한 서버에서 있는 location인데, 내 서버 일 수도 있고, 아마존 서버가 될 수도 있다.</p>
+
+<p><img src="/assets/img/pexels/multer1.png" alt="multer1" /></p>
+
+<p><img src="/assets/img/pexels/multer2.png" alt="multer2" /></p>
+
+<p><img src="/assets/img/pexels/multer3.png" alt="multer3" /></p>
+
+<p><img src="/assets/img/pexels/multer4.png" alt="multer4" /></p>
  
   </section>
 
@@ -598,28 +786,28 @@ git 저장소에 저장 될때 무시목록을 작성해서 관리 할 수 있�
         <div class="meta">Share</div>
         
         <li>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2F01%2F12%2FExpressJS.html" target="_blank" title=" Facebook">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2F01%2F17%2Fwetube.html" target="_blank" title=" Facebook">
 			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
 			<span class="sr-only">Share on Facebook</span>
 		</a>
         </li>
          
         <li>
-            <a href="https://twitter.com/intent/tweet?text=ExpressJS%EC%97%90+%EB%8C%80%ED%95%B4%EC%84%9C%20http%3A%2F%2Flocalhost%3A4000%2F2020%2F01%2F12%2FExpressJS.html" target="_blank" title="">
+            <a href="https://twitter.com/intent/tweet?text=Wetube+%ED%81%B4%EB%A1%A0+%EC%BD%94%EB%94%A9%EC%9D%84+%ED%95%98%EB%A9%B4%EC%84%9C+%EB%B0%B0%EC%9A%B4+%EA%B2%83+%EC%A0%95%EB%A6%AC.%20http%3A%2F%2Flocalhost%3A4000%2F2020%2F01%2F17%2Fwetube.html" target="_blank" title="">
 			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
 			<span class="sr-only">Tweet</span>
 		</a>
         </li>
             
         <li>
-            <a href="http://www.reddit.com/submit?url=http://localhost:4000/2020/01/12/ExpressJS.html&title=ExpressJS%EC%97%90+%EB%8C%80%ED%95%B4%EC%84%9C%20%7C%20Starsol_YC" target="_blank" title=" Reddit">
+            <a href="http://www.reddit.com/submit?url=http://localhost:4000/2020/01/17/wetube.html&title=Wetube+%ED%81%B4%EB%A1%A0+%EC%BD%94%EB%94%A9%EC%9D%84+%ED%95%98%EB%A9%B4%EC%84%9C+%EB%B0%B0%EC%9A%B4+%EA%B2%83+%EC%A0%95%EB%A6%AC.%20%7C%20Starsol_YC" target="_blank" title=" Reddit">
 			<i class="fa fa-reddit-square fa-2x" aria-hidden="true"></i>
 			<span class="sr-only">Share on Reddit</span>
 		</a>
         </li>
            
         <li>
-            <a href="mailto:?subject=ExpressJS%EC%97%90+%EB%8C%80%ED%95%B4%EC%84%9C%20%7C%20Starsol_YC&body=:%20http://localhost:4000/2020/01/12/ExpressJS.html" target="_blank" title="">
+            <a href="mailto:?subject=Wetube+%ED%81%B4%EB%A1%A0+%EC%BD%94%EB%94%A9%EC%9D%84+%ED%95%98%EB%A9%B4%EC%84%9C+%EB%B0%B0%EC%9A%B4+%EA%B2%83+%EC%A0%95%EB%A6%AC.%20%7C%20Starsol_YC&body=:%20http://localhost:4000/2020/01/17/wetube.html" target="_blank" title="">
 			<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
 			<span class="sr-only">Email</span>
 		</a>
@@ -638,12 +826,24 @@ git 저장소에 저장 될때 무시목록을 작성해서 관리 할 수 있�
 <footer>
   <div class="tag-list">
     
-      <div class="meta">Tag</div>
+      <div class="meta">Tags</div>
     
 
     
     <a class="button" href="/tags#Express.js">
       <p><i class="fa fa-tag fa-fw"></i> Express.js</p>
+    </a>
+    
+    <a class="button" href="/tags#MongoDB">
+      <p><i class="fa fa-tag fa-fw"></i> MongoDB</p>
+    </a>
+    
+    <a class="button" href="/tags#Node.js">
+      <p><i class="fa fa-tag fa-fw"></i> Node.js</p>
+    </a>
+    
+    <a class="button" href="/tags#Pug">
+      <p><i class="fa fa-tag fa-fw"></i> Pug</p>
     </a>
     
   </div>
@@ -657,21 +857,7 @@ git 저장소에 저장 될때 무시목록을 작성해서 관리 할 수 있�
 <!-- Post navigation -->
  <div id="post-nav">
     
-    <div id="previous-post">
-        <a alt="익스프레스 템플릿(pug)" href="/2020/01/12/Nodejs-Pug.html">
-            <p>Previous post</p>
-            익스프레스 템플릿(pug)
-        </a>
-    </div>
-    
 
-    
-    <div id="next-post">
-        <a alt="Node.js란 무엇인가?" href="/2020/01/09/Nodejs.html">
-            <p>Next post</p>
-            Node.js란 무엇인가?
-        </a>
-    </div>
     
 </div>
  

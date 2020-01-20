@@ -1,40 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-17T07:58:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Starsol_YC</title><subtitle>jekyll과 github pages를 이용해서 만든 블로그</subtitle><entry><title type="html">MongoDB!!</title><link href="http://localhost:4000/2020/01/15/MongoDB.html" rel="alternate" type="text/html" title="MongoDB!!" /><published>2020-01-15T00:00:00+09:00</published><updated>2020-01-15T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/15/MongoDB</id><content type="html" xml:base="http://localhost:4000/2020/01/15/MongoDB.html">&lt;h3 id=&quot;mongodb&quot;&gt;MongoDB&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-20T16:06:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Starsol_YC</title><subtitle>jekyll과 github pages를 이용해서 만든 블로그</subtitle><entry><title type="html">Wetube 클론 코딩을 하면서 배운 것 정리.</title><link href="http://localhost:4000/2020/01/17/wetube.html" rel="alternate" type="text/html" title="Wetube 클론 코딩을 하면서 배운 것 정리." /><published>2020-01-17T00:00:00+09:00</published><updated>2020-01-17T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/17/wetube</id><content type="html" xml:base="http://localhost:4000/2020/01/17/wetube.html">&lt;h3 id=&quot;nodejs란-무엇인가&quot;&gt;Node.js란 무엇인가?&lt;/h3&gt;
 
-&lt;p&gt;우리는 이제 가짜 db.js 대신에 진짜인 데이터베이스 MongoDB를 사용할 것이다.&lt;/p&gt;
+&lt;p&gt;브라우저에 종속 되어 있고 브라우저에 맞춰진 언어였던, Javascript를 브라우저 밖으로 가지고 나와서 유저가 사용 할 수 있게 한 것이다.&lt;/p&gt;
 
-&lt;p&gt;MongoDB는 NoSQL로 분류되는 데이터베이스 이다.&lt;/p&gt;
+&lt;p&gt;이것을 통해서 우리는 file system을 다룰수 있다.&lt;/p&gt;
 
-&lt;p&gt;데이터베이스는 다양하게 존재하지만, 큰 종류로 분류하면 SQL 또는 NoSQL 두가지로 나뉜다.&lt;/p&gt;
+&lt;p&gt;서버를 만들수있고, Web scrapper를 만들어서 웹페이지에 접속해서 정보들을 수집 할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;왜 우리는 MongoDB를 사용할까?&lt;/p&gt;
+&lt;p&gt;위에 일이 가능한 이유는 Javascript가 프로그래밍 언어 이기 때문이다.&lt;/p&gt;
 
-&lt;p&gt;더 적은 규칙과 더 적은 절차로 작업이 가능한 데이터베이스고, 많은 부분을 수정 할 수 있다.&lt;/p&gt;
+&lt;p&gt;Node.js를 쓰는 이유는 무엇일까?&lt;/p&gt;
 
-&lt;p&gt;그리고 많은 Relationship이 필요없는 일반적인 프로젝트를 진행할때 좋은 선택이다.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 프론트와 백엔드 모두를 Javascript로 만들때
+2. 특정 라이브러리 없이 처음 부터 하나 하나 쌓아가는 식으로 작업을 수행한다. (호불호가 갈리지만 정확히 내가 무엇을 하고 있는지 인식 할 수 있다.)
+3. 내가 많은 데이터를 움직여야 할 때 사용하기 정말 좋다. 즉, 많은 데이터를 다뤄야 할때 ex) database 생성, database 삭제, 사용자에게 전송하고, 어떤 곳에 저장하고 등등 node.js는 데이터를 다루는 성능이 아주 좋다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;MongoDB 설치 관련해서 자료 찾는중… brew를 이용한 설치와 수동으로 하는법이 있는데 다 안돼고 있음….&lt;/p&gt;
+&lt;p&gt;다만, django나 라라벨 같은 것은 하드웨어 즉 메모리에 접근하기에 유용하기 때문에 이때는 django 또는 라라벨을 써주는 것이 좋다.&lt;/p&gt;
 
-&lt;h4 id=&quot;dotenv-설치와-왜-사용-해야하는지에-대해서&quot;&gt;dotenv 설치와 왜 사용 해야하는지에 대해서&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;macOS에서 사용하는 홈브루(Homebrew)는 자유 오픈소스 소프트웨어 패키지 관리 시스템의 하나이며, macOS 운영체제의 소프트웨어 설치를 단순하게 만들어 준다.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;실제 Application으로 만들었을 때, 보안적인 측면을 고려해서 숨겨야 할 코드 및 파일이 존재하는데 그때 사용 된다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/dotenv1.png&quot; alt=&quot;dotenv1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/dotenv2.png&quot; alt=&quot;dotenv2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/dotenv3.png&quot; alt=&quot;dotenv3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;mongodb 설치 이후에 설치 한다는걸 잊지말자.&lt;/p&gt;
-
-&lt;h4 id=&quot;mongodb-video-modeldocument-name-and-schema&quot;&gt;MongoDB Video Model(document name And Schema)&lt;/h4&gt;
-
-&lt;p&gt;models폴더 안에 Video.js 코드
-&lt;img src=&quot;/assets/img/pexels/schema1.png&quot; alt=&quot;schema1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/schema2.png&quot; alt=&quot;schema1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;init.js 코드
-&lt;img src=&quot;/assets/img/pexels/schema3.png&quot; alt=&quot;schema1&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="mongodb" /><summary type="html">MongoDB</summary></entry><entry><title type="html">ExpressJS에 대해서</title><link href="http://localhost:4000/2020/01/12/ExpressJS.html" rel="alternate" type="text/html" title="ExpressJS에 대해서" /><published>2020-01-12T00:00:00+09:00</published><updated>2020-01-12T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/12/ExpressJS</id><content type="html" xml:base="http://localhost:4000/2020/01/12/ExpressJS.html">&lt;h3 id=&quot;expressjs-서버&quot;&gt;ExpressJS 서버&lt;/h3&gt;
+&lt;h3 id=&quot;expressjs-서버&quot;&gt;ExpressJS 서버&lt;/h3&gt;
 
 &lt;h4 id=&quot;what-is-a-server&quot;&gt;What is a Server?&lt;/h4&gt;
 
@@ -442,7 +429,9 @@ git 저장소에 저장 될때 무시목록을 작성해서 관리 할 수 있�
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/pexels/login3.png&quot; alt=&quot;login3&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;다만 우리는 여기서 위에 join 처럼 get, post를 나눈다는걸 기억 해야한다.&lt;/p&gt;</content><author><name></name></author><category term="Express.js" /><summary type="html">ExpressJS 서버</summary></entry><entry><title type="html">익스프레스 템플릿(pug)</title><link href="http://localhost:4000/2020/01/12/Nodejs-Pug.html" rel="alternate" type="text/html" title="익스프레스 템플릿(pug)" /><published>2020-01-12T00:00:00+09:00</published><updated>2020-01-12T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/12/Nodejs-Pug</id><content type="html" xml:base="http://localhost:4000/2020/01/12/Nodejs-Pug.html">&lt;h4 id=&quot;pug-대하여&quot;&gt;Pug 대하여&lt;/h4&gt;
+&lt;p&gt;다만 우리는 여기서 위에 join 처럼 get, post를 나눈다는걸 기억 해야한다.&lt;/p&gt;
+
+&lt;h4 id=&quot;pug-대하여&quot;&gt;Pug 대하여&lt;/h4&gt;
 
 &lt;p&gt;pug는 view engine이며, template언어 이고, html 파일들을 더 보기 편하고 쉽게 이해하게 만들어준다.&lt;/p&gt;
 
@@ -537,23 +526,72 @@ block content
 
 &lt;p&gt;고로 템플렛에 작성해서 사용하는 법은 밑에 이미지 처럼 사용하면 된다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/pagetitle2.png&quot; alt=&quot;pagetitle2&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="pug" /><category term="node.js" /><summary type="html">Pug 대하여</summary></entry><entry><title type="html">Node.js란 무엇인가?</title><link href="http://localhost:4000/2020/01/09/Nodejs.html" rel="alternate" type="text/html" title="Node.js란 무엇인가?" /><published>2020-01-09T00:00:00+09:00</published><updated>2020-01-09T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/09/Nodejs</id><content type="html" xml:base="http://localhost:4000/2020/01/09/Nodejs.html">&lt;h3 id=&quot;nodejs란-무엇인가&quot;&gt;Node.js란 무엇인가?&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/pagetitle2.png&quot; alt=&quot;pagetitle2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;브라우저에 종속 되어 있고 브라우저에 맞춰진 언어였던, Javascript를 브라우저 밖으로 가지고 나와서 유저가 사용 할 수 있게 한 것이다.&lt;/p&gt;
+&lt;h3 id=&quot;mongodb&quot;&gt;MongoDB&lt;/h3&gt;
 
-&lt;p&gt;이것을 통해서 우리는 file system을 다룰수 있다.&lt;/p&gt;
+&lt;p&gt;우리는 이제 가짜 db.js 대신에 진짜인 데이터베이스 MongoDB를 사용할 것이다.&lt;/p&gt;
 
-&lt;p&gt;서버를 만들수있고, Web scrapper를 만들어서 웹페이지에 접속해서 정보들을 수집 할 수 있다.&lt;/p&gt;
+&lt;p&gt;MongoDB는 NoSQL로 분류되는 데이터베이스 이다.&lt;/p&gt;
 
-&lt;p&gt;위에 일이 가능한 이유는 Javascript가 프로그래밍 언어 이기 때문이다.&lt;/p&gt;
+&lt;p&gt;데이터베이스는 다양하게 존재하지만, 큰 종류로 분류하면 SQL 또는 NoSQL 두가지로 나뉜다.&lt;/p&gt;
 
-&lt;p&gt;Node.js를 쓰는 이유는 무엇일까?&lt;/p&gt;
+&lt;p&gt;왜 우리는 MongoDB를 사용할까?&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 프론트와 백엔드 모두를 Javascript로 만들때
-2. 특정 라이브러리 없이 처음 부터 하나 하나 쌓아가는 식으로 작업을 수행한다. (호불호가 갈리지만 정확히 내가 무엇을 하고 있는지 인식 할 수 있다.)
-3. 내가 많은 데이터를 움직여야 할 때 사용하기 정말 좋다. 즉, 많은 데이터를 다뤄야 할때 ex) database 생성, database 삭제, 사용자에게 전송하고, 어떤 곳에 저장하고 등등 node.js는 데이터를 다루는 성능이 아주 좋다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;더 적은 규칙과 더 적은 절차로 작업이 가능한 데이터베이스고, 많은 부분을 수정 할 수 있다.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;macOS에서 사용하는 홈브루(Homebrew)는 자유 오픈소스 소프트웨어 패키지 관리 시스템의 하나이며, macOS 운영체제의 소프트웨어 설치를 단순하게 만들어 준다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Node.js" /><summary type="html">Node.js란 무엇인가?</summary></entry></feed>
+&lt;p&gt;그리고 많은 Relationship이 필요없는 일반적인 프로젝트를 진행할때 좋은 선택이다.&lt;/p&gt;
+
+&lt;p&gt;MongoDB 설치 관련해서 자료 찾는중… brew를 이용한 설치와 수동으로 하는법이 있는데 다 안돼고 있음….&lt;/p&gt;
+
+&lt;h4 id=&quot;dotenv-설치와-왜-사용-해야하는지에-대해서&quot;&gt;dotenv 설치와 왜 사용 해야하는지에 대해서&lt;/h4&gt;
+
+&lt;p&gt;실제 Application으로 만들었을 때, 보안적인 측면을 고려해서 숨겨야 할 코드 및 파일이 존재하는데 그때 사용 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/dotenv1.png&quot; alt=&quot;dotenv1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/dotenv2.png&quot; alt=&quot;dotenv2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/dotenv3.png&quot; alt=&quot;dotenv3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;mongodb 설치 이후에 설치 한다는걸 잊지말자.&lt;/p&gt;
+
+&lt;h4 id=&quot;mongodb-video-modeldocument-name-and-schema&quot;&gt;MongoDB Video Model(document name And Schema)&lt;/h4&gt;
+
+&lt;p&gt;models폴더 안에 Video.js 코드
+&lt;img src=&quot;/assets/img/pexels/schema1.png&quot; alt=&quot;schema1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/schema2.png&quot; alt=&quot;schema1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;init.js 코드
+&lt;img src=&quot;/assets/img/pexels/schema3.png&quot; alt=&quot;schema1&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;ref를-통해서-video와-comment를-연결하는법&quot;&gt;ref를 통해서 Video와 Comment를 연결하는법.&lt;/h4&gt;
+
+&lt;p&gt;이번에 하는 작업은 Video를 업로드 하고 난 이후 Comment를 달 수 있게 해주는 코드 작업이다.&lt;/p&gt;
+
+&lt;p&gt;둘의 관계를 지어줘야하는데 방법으로는&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/ref1.png&quot; alt=&quot;ref1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/ref2.png&quot; alt=&quot;ref2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/ref3.png&quot; alt=&quot;ref3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이러한 방법이 존재한다.&lt;/p&gt;
+
+&lt;p&gt;명심해야 할 것은 하나의 ref고, Comment와 다르게 좋아요나 유저를 저장하거나 할때 다른 ref를 사용 할 것이다.&lt;/p&gt;
+
+&lt;h4 id=&quot;영상-업로드-절차와-multer-middleware-사용법과-쓰는-이유&quot;&gt;영상 업로드 절차와 Multer middleware 사용법과 쓰는 이유&lt;/h4&gt;
+
+&lt;p&gt;upload 할때 우리가 원하는건 file이 아니라 loation(위치) 이다.&lt;/p&gt;
+
+&lt;p&gt;어떠한 서버에서 있는 location인데, 내 서버 일 수도 있고, 아마존 서버가 될 수도 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/multer1.png&quot; alt=&quot;multer1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/multer2.png&quot; alt=&quot;multer2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/multer3.png&quot; alt=&quot;multer3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/multer4.png&quot; alt=&quot;multer4&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="Node.js" /><category term="Express.js" /><category term="Pug" /><category term="MongoDB" /><summary type="html">Node.js란 무엇인가?</summary></entry></feed>
