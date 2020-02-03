@@ -8,4 +8,4 @@ date: 21 January 2020
 
 HTML5 + CSS3를 이용한 카카오톡 클론 코딩
 
-<a href="https://starsol89.github.io/kakao-clone/">kakao 클론 코딩 작품</a>
+<a href="https://starsol89.github.io/kakao-clone/">kakao 클론 코딩</a>
