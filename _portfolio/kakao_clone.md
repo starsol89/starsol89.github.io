@@ -2,7 +2,7 @@
 layout: post
 title: HTML_CSS Project
 feature-img: "assets/img/portfolio/cake.png"
-img: "assets/img/portfolio/cake.png"
+img: "assets/img/portfolio/hc.jpeg"
 date: 21 January 2020
 ---
 
