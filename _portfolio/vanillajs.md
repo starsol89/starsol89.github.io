@@ -1,8 +1,8 @@
 ---
 layout: post
 title: VanillaJS Project
-feature-img: "assets/img/portfolio/cake.png"
-img: "assets/img/portfolio/cake.png"
+feature-img: "assets/img/portfolio/hcj.jpeg"
+img: "assets/img/portfolio/hcj.jpeg"
 date: 20 January 2020
 ---
 
